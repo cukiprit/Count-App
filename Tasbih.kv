@@ -1,0 +1,28 @@
+#:kivy 1.1
+
+MainWidget:
+
+<MainWidget>:
+    orientation: "vertical"
+    cols: 2
+    
+    Label:
+        text: root.my_text
+        font_size: dp(80)
+
+    BoxLayout:
+        Button:
+            text: "+"
+            font_size: dp(25)
+            on_press: root.tambah()
+
+        Button:
+            text: "Reset"
+            font_size: dp(25)
+            on_press: root.reset_angka()
+
+        Button:
+            text: "-"
+            font_size: dp(25)
+            on_press: root.kurang()
+            disabled: root.less_than_zero
