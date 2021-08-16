@@ -24,7 +24,7 @@ class MainWidget(BoxLayout):
         self.count = 0
         self.my_text = str(self.count)
 
-class Tasbih(App):
+class Count(App):
     pass
 
-Tasbih().run()
+Count().run()
